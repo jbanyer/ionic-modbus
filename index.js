@@ -1254,16 +1254,8 @@ module.exports.getPorts = function getPorts() {
 };
 
 module.exports.TestPort = require("./ports/testport");
-try {
-    module.exports.RTUBufferedPort = require("./ports/rtubufferedport");
-} catch (err) { }
 module.exports.TcpPort = require("./ports/tcpport");
 module.exports.TcpRTUBufferedPort = require("./ports/tcprtubufferedport");
-module.exports.TelnetPort = require("./ports/telnetport");
-module.exports.C701Port = require("./ports/c701port");
 
 module.exports.ServerTCP = require("./servers/servertcp");
-try {
-    module.exports.ServerSerial = require("./servers/serverserial");
-} catch (err) { }
 module.exports.default = module.exports;
